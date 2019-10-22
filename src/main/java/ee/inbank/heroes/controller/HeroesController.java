@@ -1,17 +1,20 @@
 package ee.inbank.heroes.controller;
 
 import ee.inbank.heroes.dto.Hero;
-import java.util.Arrays;
+import ee.inbank.heroes.service.HeroesService;
 import java.util.List;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@AllArgsConstructor
 public class HeroesController {
+
+  private HeroesService heroesService;
 
   @GetMapping("/heroes")
   public List<Hero> getHeroes() {
-    return Arrays.asList(new Hero("Priit", 100, 100),
-        new Hero("Oleg", 50, 80));
+    return heroesService.getHeroes();
   }
 }
