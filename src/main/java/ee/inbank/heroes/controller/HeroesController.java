@@ -3,7 +3,6 @@ package ee.inbank.heroes.controller;
 import ee.inbank.heroes.model.Hero;
 import ee.inbank.heroes.service.HeroesService;
 import java.util.List;
-import jdk.nashorn.internal.objects.NativeError;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
