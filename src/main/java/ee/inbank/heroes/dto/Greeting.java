@@ -1,4 +1,4 @@
-package ee.inbank.heroes;
+package ee.inbank.heroes.dto;
 
 public class Greeting {
 

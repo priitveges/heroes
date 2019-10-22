@@ -1,5 +1,6 @@
-package ee.inbank.heroes;
+package ee.inbank.heroes.controller;
 
+import ee.inbank.heroes.dto.Greeting;
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
