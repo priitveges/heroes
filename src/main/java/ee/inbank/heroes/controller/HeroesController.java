@@ -6,20 +6,22 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/heroes")
 @AllArgsConstructor
 public class HeroesController {
 
   private HeroesService heroesService;
 
-  @GetMapping("/heroes")
+  @GetMapping
   public List<Hero> getHeroes() {
     return heroesService.getHeroes();
   }
 
-  @GetMapping("/heroes/{id}")
+  @GetMapping("/{id}")
   public Hero getHero(@PathVariable Long id) {
     return heroesService.getHero(id);
   }
