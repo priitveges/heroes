@@ -5,3 +5,11 @@ spring:
     password: root
   jackson:
     default-property-inclusion: non_null
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+  file:
+    path: ./logs

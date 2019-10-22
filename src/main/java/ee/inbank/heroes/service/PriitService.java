@@ -14,12 +14,12 @@ public class PriitService {
 
   @Scheduled(fixedRate = 1000)
   public void whatDoWeDo(){
-    for (Hero hero : heroesRepository.findHeroByName("Priit")) {
+    for (Hero hero : heroesRepository.findHeroByName2("Priit")) {
       hero.setStrength(hero.getStrength() + 100);
       heroesRepository.save(hero);
     }
 
-    for (Hero hero : heroesRepository.findHeroByName("Enn")) {
+    for (Hero hero : heroesRepository.findHeroByName2("Enn")) {
       hero.setStamina(hero.getStamina() + 200);
       heroesRepository.save(hero);
     }
