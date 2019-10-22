@@ -15,7 +15,7 @@ public class HeroesService {
   private HeroesRepository heroesRepository;
 
   public List<Hero> getHeroes() {
-    return heroesRepository.findAll();
+    return heroesRepository.findAllByOrderByIdAsc();
   }
 
   public Hero getHero(Long id) {
