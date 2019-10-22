@@ -22,4 +22,12 @@ public class HeroesService {
     Optional<Hero> heroOp = heroesRepository.findById(id);
     return heroOp.orElseThrow(HeroNotFoundException::new);
   }
+
+  public Hero save(Hero hero) {
+    Hero dbHero = new Hero();
+    dbHero.setName(hero.getName());
+    dbHero.setStamina(hero.getStamina());
+    dbHero.setStrength(hero.getStrength());
+    return heroesRepository.save(dbHero);
+  }
 }
