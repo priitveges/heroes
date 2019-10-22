@@ -29,7 +29,7 @@ public class HeroesController {
   }
 
   @PostMapping
-  public Hero getHero(@RequestBody Hero hero) {
+  public Hero save(@RequestBody Hero hero) {
     return heroesService.save(hero);
   }
 }

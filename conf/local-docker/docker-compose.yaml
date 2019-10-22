@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  heroes-db:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5402:5432"
