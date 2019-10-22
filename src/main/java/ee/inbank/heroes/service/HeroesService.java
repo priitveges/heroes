@@ -1,5 +1,6 @@
 package ee.inbank.heroes.service;
 
+import ee.inbank.heroes.exceptions.HeroNotFoundException;
 import ee.inbank.heroes.model.Hero;
 import ee.inbank.heroes.repository.HeroesRepository;
 import java.util.List;
@@ -19,6 +20,6 @@ public class HeroesService {
 
   public Hero getHero(Long id) {
     Optional<Hero> heroOp = heroesRepository.findById(id);
-    return heroOp.orElseThrow(RuntimeException::new);
+    return heroOp.orElseThrow(HeroNotFoundException::new);
   }
 }
