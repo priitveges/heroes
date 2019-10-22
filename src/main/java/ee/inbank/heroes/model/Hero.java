@@ -21,6 +21,10 @@ public class Hero {
   private Integer strength;
   private Integer stamina;
 
+  public Hero(String name) {
+    this.name = name;
+  }
+
   public Hero(String name, Integer strength, Integer stamina) {
     this.name = name;
     this.strength = strength;
