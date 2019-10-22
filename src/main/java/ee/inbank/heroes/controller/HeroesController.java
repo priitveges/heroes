@@ -1,6 +1,6 @@
 package ee.inbank.heroes.controller;
 
-import ee.inbank.heroes.dto.Hero;
+import ee.inbank.heroes.model.Hero;
 import ee.inbank.heroes.service.HeroesService;
 import java.util.List;
 import lombok.AllArgsConstructor;

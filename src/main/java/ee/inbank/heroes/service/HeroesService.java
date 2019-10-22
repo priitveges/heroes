@@ -1,6 +1,6 @@
 package ee.inbank.heroes.service;
 
-import ee.inbank.heroes.dto.Hero;
+import ee.inbank.heroes.model.Hero;
 import java.util.Arrays;
 import java.util.List;
 import org.springframework.stereotype.Service;
